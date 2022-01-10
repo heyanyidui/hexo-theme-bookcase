@@ -2,6 +2,33 @@
 <html>
 <%- partial('_partial/head') %>
 <body>
+  <nav class="app-nav no-badge">
+    <ul>
+
+      
+          <%
+
+            var titles = ['主页', '资源', '关于']
+            var urls = ['/', '/resource', '/about/']
+   
+            var htmls = ""
+            for (var i=0; i<titles.length; i++) {
+              var curr = page.path
+              var html = '<li><p><a href="' + urls[i] + '" title="' + 
+                titles[i] + '">'+titles[i] +'</a></p></li>'
+              
+              if (curr == urls[i].substr(1) + "index.html") {
+                  html = '<li><p><a href="' + urls[i] + '" title="' + 
+                titles[i] + '" class="active">'+titles[i] +'</a></p></li>'
+              } 
+              htmls += html
+            } 
+            
+            
+          %>
+          <%- htmls %>
+    </ul>
+  </nav>
   <div id="container">
 
     <button id="sidebar-toggle" class="sidebar-toggle">
@@ -33,6 +60,7 @@
     <main>
       <div class="content">
         <%- body %>
+        
       </div>
     </main>
 
