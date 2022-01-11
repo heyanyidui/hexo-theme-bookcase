@@ -21,7 +21,7 @@
 		section {
 			position: absolute;
 		    sectionTop(search);
-		    width: 100%;
+		    width: 300px;
 		    bottom: 60px;
 		    font-family:font-normal-text;
 		}
@@ -148,7 +148,7 @@
 			    margin: 0 0 0 2rem;
 			    text-transform: capitalize;
 			    line-height: 2.618rem;
-			    border-color: inherit;
+			    
 			    transition: all .15s;
 
 			    &:hover {
@@ -161,12 +161,11 @@
 
 			    &.highlight {
 			    	color:var(--color-link);
+			    	border-right: 2px solid;
 					font-size: 1.168rem;
-			    	&:after {
-			    		background-color:var(--color-link);
-			    	}
 				}
 
+				/*
 			    &:after {
 			    	position: absolute;
 				    top: 50%;
@@ -178,7 +177,8 @@
 				    box-shadow:0 0 0 1px var(--color-border);
 				    background:var(--color-border);
 				    transform: translate(50%,-50%);
-			    }
+			    }*/
+			   
 			}
 		}
 	}

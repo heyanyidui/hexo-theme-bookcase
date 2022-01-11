@@ -2,7 +2,7 @@
 root: "https://github.com/objchris/hexo-theme-bookcase"
 
 # The tag you want to show when user enter you website
-indicate: "index"
+indicate: "home"
 
 # use search function
 search: true

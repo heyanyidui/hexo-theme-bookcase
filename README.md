@@ -45,3 +45,9 @@ first version
 
 ## License
 Licensed under [MIT](https://github.com/objchris/hexo-theme-bookcase/blob/master/LICENSE).
+
+
+
+
+
+添加  home.md 作为主页。

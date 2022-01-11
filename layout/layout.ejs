@@ -4,10 +4,7 @@
 <body>
   <nav class="app-nav no-badge">
     <ul>
-
-      
           <%
-
             var titles = ['主页', '资源', '关于']
             var urls = ['/', '/resource', '/about/']
    
@@ -44,6 +41,7 @@
     <%
       var current_category;
       var current_post_title;
+      // 如果页面有分类
       if (page.categories) {
         current_category = page.categories.first();
         current_post_title = page.title;
@@ -59,6 +57,7 @@
 
     <main>
       <div class="content">
+        <!-- 对应的是 index.ejs -->
         <%- body %>
         
       </div>
