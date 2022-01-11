@@ -6,8 +6,8 @@
     <ul>
           <%
             var titles = ['主页', '资源', '关于']
-            var urls = ['/', '/resource', '/about/']
-   
+            var urls = ['/', '/resource/', '/about/']
+            
             var htmls = ""
             for (var i=0; i<titles.length; i++) {
               var curr = page.path
@@ -53,7 +53,6 @@
     <%- partial('_partial/sidebar', {current_category: current_category, current_title: current_post_title}) %>
     </aside>
 
-    
 
     <main>
       <div class="content">

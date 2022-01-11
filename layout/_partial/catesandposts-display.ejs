@@ -1,11 +1,22 @@
 <%
 function displayCategoriesAndPosts(category, depth) {
+    // 如果是主页的话
+    if (page.path == "index.html" || page.path == "about/index.html" || page.path == 'resource/index.html') {
+        var html = ''
+        // 拿出分类的第一个作为索引
+        site.categories.forEach(function(cat) {
+            first_post = cat.posts.first()
+            html += '<a class="post-title" href="' + url_for(first_post.path) + '"> '+ cat.name +'</a>'
+        })
+        return html
+    }
+
     // get its posts
     var posts = category.posts;
     // get its child categories
     var childCategories = site.categories.find({'parent': category._id});
 
-    var html = '';
+    var html = '<p class="sub-category"  style="color: black">'+category.name+'</p>';
     posts.sort('date', 'desc').forEach(function(post) {
     	if (post.categories.length != depth) {
     		return false;

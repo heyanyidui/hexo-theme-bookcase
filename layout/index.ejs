@@ -1,9 +1,10 @@
 <% 
     var path = page.path
+    
     // 如果是主页
     if (path == "index.html") {
         site.posts.forEach(function(p){
-            if (p.title == "home") {
+            if (p.slug == theme.home) {
                 post = p
             }
         })
@@ -12,11 +13,13 @@
     else {
     	var category;
     	category = site.categories.first();
-    	site.categories.forEach(function(cate) {
+    	/*
+        site.categories.forEach(function(cate) {
             if(cate.name == theme.indicate) {
             	category = cate;
             }
-        });
+        })
+        */
         post = category.posts.first();
     }
 %>
