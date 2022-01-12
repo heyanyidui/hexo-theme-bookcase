@@ -38,6 +38,10 @@ var searchFunc = function(path) {
                     var index_title = -1;
                     var index_content = -1;
                     var first_occur = -1;
+                    // 如果是不带类别的就不显示
+                    if (data_url.startsWith('/uncategorized/')) {
+                        return;
+                    }
                     // only match artiles with not empty titles and contents
                     if(data_title != '' && data_content != '') {
                         keywords.forEach(function(keyword, i) {
