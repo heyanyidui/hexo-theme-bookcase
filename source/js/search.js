@@ -18,7 +18,7 @@ var searchFunc = function(path) {
             $resultContent.innerHTML = "";
             if ($input.value.trim().length <= 0) {
                 // 没有键入搜索内容
-                $resultTitle.innerHTML = "<h1>[(｡ŏ_ŏ)] 找不到了..</h1>";
+                $resultTitle.innerHTML = "<h1></h1>";
             }
             $input.addEventListener('input', function(){
                 var count = 0;
@@ -92,9 +92,9 @@ var searchFunc = function(path) {
                     } 
                 });
                 if(count > 0) {
-                    $resultTitle.innerHTML = "<h1>[(๑•̀ㅂ•́)و✧] 呐，给你</h1>";
+                    $resultTitle.innerHTML = "<h1></h1>";
                 } else {
-                    $resultTitle.innerHTML = "<h1>[(｡ŏ_ŏ)] 找不到了..</h1>";
+                    $resultTitle.innerHTML = "<h1></h1>";
                 }
                 
                 $resultContent.innerHTML = str;
