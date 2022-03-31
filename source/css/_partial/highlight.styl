@@ -38,7 +38,7 @@ pre {
 .gutter pre {
 	color: #999;
 	margin-bottom: 0;
-	padding: 1.2em 0 1.2em 1.4em;
+	padding: 0.2em 0 0.2em 1.4em;
 	font-size: .9em
 }
 
@@ -75,7 +75,7 @@ pre .hljs-regexp {
 	color: #42b983;
 }
 pre .hljs-title {
-	color: #a6e22e;
+	color: #181815;
 }
 pre .hljs-tag .hljs-value,
 pre .hljs-string,
@@ -123,4 +123,20 @@ pre .hljs-xml .hljs-vbscript,
 pre .hljs-xml .hljs-css,
 pre .hljs-xml .hljs-cdata {
 	opacity: 0.5;
+}
+
+.markdown-section pre>code {
+    -moz-osx-font-smoothing: initial;
+    -webkit-font-smoothing: initial;
+    border-radius: 2px;
+    color: var(--color-code-in-container);
+    font-size: 1.0rem;
+    // 减小行距
+	// line-height: inherit;
+	line-height: 30px;
+    margin: 0 0px;
+    max-width: inherit;
+    overflow: inherit;
+    padding: 0em 0px;
+    white-space: inherit;
 }
