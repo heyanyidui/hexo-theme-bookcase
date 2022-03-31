@@ -1,8 +1,12 @@
 #container {
 	
 	.sidebar {
-	    left: -320px;
+		// 小屏幕显示则隐藏
+	    left: -300px;
+		position: fixed;
+		width: 40%;
 	    transition: transform .25s ease-out;
+		// display: none
 	}
 
 	main {
@@ -21,6 +25,7 @@
 	.sidebar-toggle {
 		width: 100%;
     	background-color: #ffffffb3;
+		// display: none
 	}
 
 }

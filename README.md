@@ -1,26 +1,7 @@
 # BOOKCASE
-![](https://img.shields.io/badge/Release-v1.1.0-green.svg?style=flat)
-![](https://img.shields.io/badge/License-MIT-blue.svg?style=flat)
+![](https://img.shields.io/badge/Release-v1.0.0-green.svg?style=flat) ![](https://img.shields.io/badge/License-MIT-blue.svg?style=flat)
 
-📚 A clean, Gitbook style theme for HEXO. 
-[中文文档](https://objchris.com/hexo-theme-bookcase/doc/get-start-chinese/)
-
-## Summary
-- Preview
-- Features
-- Quick start
-- ChangeLog
-- License
-
-## Preview
-- [demo](http://objchris.com/hexo-theme-bookcase/)
-
-## Feature
-- Gitbook style
-- Mutil Platform
-- Multilevel classification
-- Dark mode
-- Search By [hexo-generator-search](https://github.com/wzpan/hexo-generator-search)
+ [hexo-generator-search](https://github.com/wzpan/hexo-generator-search)
 
 ## Quick start
 1. go inside hexo dir
