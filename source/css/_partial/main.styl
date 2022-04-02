@@ -141,6 +141,32 @@
     			font-weight: 700;
     		}
 
+			a.post-category {
+				color:var(--color-text);
+				position: relative;
+			    display: block;
+			    margin: 0 0 0 1rem;
+			    text-transform: capitalize;
+			    line-height: 2.618rem;
+			    
+			    transition: all .15s;
+
+			    &:hover {
+			    	color:var(--color-link);
+			    	font-size: 1.168rem;
+			    	&:after {
+			    		background-color:var(--color-link);
+			    	}
+			    }
+
+			    &.highlight {
+			    	color:var(--color-link);
+			    	border-right: 2px solid;
+					font-size: 1.168rem;
+				}
+			   
+			}
+			
 			a.post-title {
 				color:var(--color-text);
 				position: relative;

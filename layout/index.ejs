@@ -1,7 +1,7 @@
 <% 
     var path = page.path
     
-    // 如果是主页
+    // 如果是主页或者单独页面
     if (path == "index.html") {
         site.posts.forEach(function(p){
             if (p.slug == theme.home) {

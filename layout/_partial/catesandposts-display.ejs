@@ -6,7 +6,7 @@ function displayCategoriesAndPosts(category, depth) {
         // 拿出分类的第一个作为索引
         site.categories.forEach(function(cat) {
             first_post = cat.posts.first()
-            html += '<a class="post-title" href="' + url_for(first_post.path) + '"> '+ cat.name +'</a>'
+            html += '<a class="post-category" href="' + url_for(first_post.path) + '"> '+ cat.name +'</a>'
         })
         return html
     }
@@ -17,6 +17,8 @@ function displayCategoriesAndPosts(category, depth) {
     var childCategories = site.categories.find({'parent': category._id});
 
     var html = '<p class="sub-category"  style="color: black">'+category.name+'</p>';
+    
+    // 根据创造时间排序
     posts.sort('date', 'desc').forEach(function(post) {
     	if (post.categories.length != depth) {
     		return false;
