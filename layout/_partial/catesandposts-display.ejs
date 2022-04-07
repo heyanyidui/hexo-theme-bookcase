@@ -18,8 +18,8 @@ function displayCategoriesAndPosts(category, depth) {
 
     var html = '<p class="sub-category"  style="color: black">'+category.name+'</p>';
     
-    // 根据创造时间排序
-    posts.sort('date', 'desc').forEach(function(post) {
+    // 根据创造时间排序 desc asc
+    posts.sort('date', 'asc').forEach(function(post) {
     	if (post.categories.length != depth) {
     		return false;
     	}
